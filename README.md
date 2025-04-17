@@ -37,3 +37,5 @@ INFO : Après le premier `git push -u origin main`, vous pouvez utiliser seuleme
 * `git add *`
 * `git commit -m "MESSAGE"`
 * `git push`
+
+Readme modifié sur la nouvelle branche
