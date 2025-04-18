@@ -38,4 +38,44 @@ INFO : Après le premier `git push -u origin main`, vous pouvez utiliser seuleme
 * `git commit -m "MESSAGE"`
 * `git push`
 
-Readme modifié sur la nouvelle branche
+# Exercice 0
+* Créer un nouveau dépôt Github
+* Sur votre ordinateur, créer un nouveau dossier et collez dedans un projet que vous avez déjà réalisé en HTML/CSS (HomeKey, Vividly, etc.)
+* Créer un fichier README.md avec un contenu minimal (au moins un titre, une description)
+* Faire en sorte d'envoyer votre projet sur Github
+
+# Pull Request
+C'est une fonctionnalité clé des système de gestion de version basées sur git comme Github, Gitlab, BitBucket. Elle représente une demande de fusion des modifications (commits) d'une branche vers une autre, généalement de la branche d'une fonctionnalité vers la branche principale d'un projet.
+
+## Concept de la Pull Request (PR)
+**Collaboration et revue de code** : La PR n'est pas seulement un mécanisme de fusion de code. C'est aussi un outil de collaboration. Lorsqu'un développeur soummet une PR, d'autres membres de l'équipe peuvent la consulter, laisser des commentaires, suggérer des modifications et même proposer des commits pour améliorer la PR avant qu'elle ne soit fusionnée.
+
+**Point de contrôle** : Avant la fusion, la PR fournit un point de contrôle pour s'assurer que le code respecte les qualités, passe tous les tests et n'introduit pas de régressions.
+
+**Intégration avec CI/CD** : Les PR sont souvent intégrées avec des outils d'Intégration Continue (CI) et de Livraison Continue (CD). Lorsqu'une PR est soumise, des tests automatis"s peuvent être déclenchés, et le résultat de ces tests est souvent signalé directement dans l'interface de la PR.
+
+## Faire une PR
+**Fork du repository**
+Avant de pouvoir soumettre une PR, vous devez avoir une copie du repository sur votre compte Github. Si ce n'est pas déjà fait :
+1. Aller sur la page Github du projet auquel vous souhaitez contribuer
+2. Cliquer sur le bouton "Fork" situié en haut à droite de la page. Cela créera une copie du projet sur votre compte Github personnel.
+
+**Cloner le fork**
+Après avoir fait un fork, vous allez pouvoir travailler dessus. pour cela, vous allez devoir le cloner sur votre propre machine
+
+```bash
+git clone URL_DU_DEPOT (Attention, c'est VOTRE repo que vous devez cloner, pas celui du projet original)
+git clone https://github.com/JackAdamsJenkins/repo-olivia.git
+```
+
+**Créer une nouvelle branche**
+Il est conseillé de créer une nouvelle branche pour chaque fonctionnalité ou correction. Cela vous permet de garder le travail organisé et séparé.
+Pour créer une nouvelle branche, vous devez utiliser la commande `git checkout -b NomDeLaNouvelleBranche`
+
+**Exemples :**
+```
+git checkout -b nom_de_la_branche
+git checkout -b interfaceGUI
+git checkout -b correctionBug
+git checkout -b search
+```
